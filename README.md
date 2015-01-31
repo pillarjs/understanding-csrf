@@ -1,8 +1,12 @@
 
+# Understanding CSRF
+
 There's been some concern around the Express team's [csrf](https://github.com/pillarjs/csurf) module,
 specifically around how cryptographically secure the tokens are created.
 This concern is unwarranted is due to a misunderstanding of how CSRF tokens work.
 So here's a quick run down!
+
+Read this and still have questions? Want to tell us we're wrong? Open an issue!
 
 ## How does a CSRF attack work?
 
