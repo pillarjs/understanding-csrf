@@ -48,7 +48,7 @@ This really isn't worth the trouble.
 
 For example, you could not load sessions if the referrer header is not your server.
 
-### GET is always idempotent
+### GET should not have side effects
 
 Make sure that none of your `GET` requests change any relevant data in your database.
 This is a very novice mistake to make and makes your app susceptible to more than just CSRF attacks.
