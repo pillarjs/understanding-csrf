@@ -94,7 +94,7 @@ Don't create a `/csrf` route just to grab a token,
 and especially don't support CORS on that route!
 
 The token just needs to be "unguessable",
-making it difficult for a attacker to successful within a couple of tries.
+making it difficult for an attacker to successfully guess within a couple of tries.
 It does not have to be cryptographically secure.
 An attack is one or two clicks by an unbeknownst user,
 not a brute force attack by a server.
