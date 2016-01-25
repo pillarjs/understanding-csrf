@@ -25,11 +25,11 @@ there might be some inputs for credit card and social security info.
 
 ## How to mitigate CSRF attacks?
 
-### Use only JSON APIs
+### Use only JSON APIs and check for Content-Type
 
 AJAX calls use JavaScript and are CORS-restricted.
-There is no way for a simple `<form>` to send `JSON`,
-so by accepting only JSON,
+A simple `<form>` with the form data encoding `text/plain` is still able to forge requests containing valid JSON data,
+so by accepting only JSON with `Content-Type: application/json` on the request
 you eliminate the possibility of the above form.
 
 ### Disable CORS
