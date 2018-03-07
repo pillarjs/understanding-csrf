@@ -110,7 +110,7 @@ Thus, CSRF tokens are generated on a per-request basis and different every time.
 But the server needs to know that any token included with a request is valid.
 Thus:
 
-1. Crytographically secure CSRF tokens are now the CSRF "secret", (supposedly) only known by the server.
+1. Cryptographically secure CSRF tokens are now the CSRF "secret", (supposedly) only known by the server.
 2. CSRF tokens are now a hash of the secret and a salt.
 
 Read more here:
