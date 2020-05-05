@@ -37,13 +37,13 @@
 
 不幸的是，这不会阻止上面的请求由于它没有使用JavaScript(因此CORS不适用)。
 
-### 检验referrer头部
+### 检验referer头部
 
-不幸的是，检验referrer头部很麻烦，
-但是你可以阻止那些referrer头部不是来自你的页面的请求。
+不幸的是，检验referer头部很麻烦，
+但是你可以阻止那些referer头部不是来自你的页面的请求。
 这实在不值得麻烦。
 
-举个例子，你不能加载session如果这个请求的referrer头部不是你的服务器。
+举个例子，你不能加载session如果这个请求的referer头部不是你的服务器。
 
 ### GET总是幂等的
 
